@@ -1,0 +1,170 @@
+/* Importing Google Font */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4CAF50;
+  padding: 15px 50px;
+  position: relative;
+  z-index: 1000; /* Ensures nav stays above other elements */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation List */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid white;
+}
+
+.btn {
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+/* Hero Section with Background Image */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background: url("images-/freepik__a-minimalist-healththemed-composition-featuring-a-__92555.png") no-repeat center center/cover;
+  z-index: 1; /* Keeps hero section below nav */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark Overlay */
+  backdrop-filter: blur(5px); /* Blur Effect */
+  z-index: 0; /* Keeps the blur behind */
+}
+
+.hero h1,
+.hero h6,
+.hero button {
+  position: relative;
+  z-index: 2; /* Ensures text and button stay on top */
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero h6 {
+  font-size: 16px;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav {
+      padding: 15px 20px;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #4CAF50;
+      padding: 20px 0;
+      text-align: center;
+      z-index: 1100; /* Ensures menu is on top of blur */
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul.active {
+      display: flex;
+  }
+
+  .hero h1 {
+      font-size: 24px;
+  }
+
+  .hero h6 {
+      font-size: 14px;
+  }
+}
