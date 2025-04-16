@@ -68,69 +68,6 @@ nav ul li a.active {
   background-color: #45a049;
   color: white;
 }
-
-/* Hero Section with Background Image */
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-  background: url("images-/freepik__a-minimalist-healththemed-composition-featuring-a-__92555.png")
-    no-repeat center center/cover;
-  z-index: 1; /* Keeps hero section below nav */
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark Overlay */
-  backdrop-filter: blur(5px); /* Blur Effect */
-  z-index: 0; /* Keeps the blur behind */
-}
-
-.hero h1,
-.hero h6,
-.hero button {
-  position: relative;
-  z-index: 2; /* Ensures text and button stay on top */
-}
-
-.hero h1 {
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
-}
-
-.hero h6 {
-  font-size: 16px;
-  color: #f0f0f0;
-  margin-bottom: 20px;
-}
-
-.hero button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero button:hover {
-  background-color: #45a049;
-}
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   nav {
     padding: 15px 20px;
@@ -159,13 +96,5 @@ nav ul li a.active {
 
   nav ul.active {
     display: flex;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero h6 {
-    font-size: 14px;
   }
 }
