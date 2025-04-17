@@ -4,6 +4,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-image: url('assests/mainbg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 
 /* Navigation Bar */
@@ -11,8 +15,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #4caf50;
-  padding: 15px 50px;
+  background: #5BFF64;
+  padding: 3px 50px;
   position: relative;
   z-index: 1000; /* Ensures nav stays above other elements */
 }
@@ -20,7 +24,7 @@ nav {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: #000000;
 }
 
 /* Hamburger Menu */
@@ -36,7 +40,7 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 nav ul li {
@@ -45,20 +49,21 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #000000;
   font-weight: 500;
   padding: 10px 15px;
 }
 
 nav ul li a.active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .btn {
-  background-color: white;
-  color: #4caf50;
+  background-color: transparent;
+  color: #111111;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 26px;
+  border: 1.4px solid #000000;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
@@ -69,20 +74,27 @@ nav ul li a.active {
   color: white;
 }
 
+#signUpBtn {
+  background-color: black;
+  color: #ffffff;
+  font-weight: 400;
+}
+
 /* Hero Section with Background Image */
 .hero {
   position: relative;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+  flex-direction: row;
+  align-items: top;
+  justify-content: left;
+  text-align: left;
+  color: #003703;
   padding: 20px;
-  background: url("images-/freepik__a-minimalist-healththemed-composition-featuring-a-__92555.png")
-    no-repeat center center/cover;
+  background: url("assests/mainbg.png")
+    no-repeat top center/contain;
   z-index: 1; /* Keeps hero section below nav */
+  /* border: 1px solid red; */
 }
 
 .hero::before {
@@ -92,8 +104,6 @@ nav ul li a.active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark Overlay */
-  backdrop-filter: blur(5px); /* Blur Effect */
   z-index: 0; /* Keeps the blur behind */
 }
 
@@ -105,19 +115,28 @@ nav ul li a.active {
 }
 
 .hero h1 {
-  font-size: 32px;
+  font-size: 5.6rem;
   font-weight: bold;
-  color: white;
+  margin-bottom: 32px;
 }
 
 .hero h6 {
-  font-size: 16px;
-  color: #f0f0f0;
-  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-top: 0;
+  color: #003703;
+  margin-bottom: 32px;
+}
+
+#hero-content {
+  margin-top: 20px;
+  margin-left: 140px;
+  width: 50%;
+  height: 60vh;
 }
 
 .hero button {
-  background-color: #4caf50;
+  background-color: #003703;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -127,7 +146,7 @@ nav ul li a.active {
 }
 
 .hero button:hover {
-  background-color: #45a049;
+  background-color: #000000;
 }
 
 /* Responsive Design */
