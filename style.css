@@ -182,7 +182,7 @@ nav ul li a.active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 120px;
+  padding: 80px 120px;
 }
 
 .product-card {

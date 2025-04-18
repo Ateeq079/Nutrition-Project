@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+    .strength {
+      font-weight: bold;
+    }
+    .weak {
+      color: red;
+    }
+    .medium {
+      color: orange;
+    }
+    .strong {
+      color: green;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Signup Form</h2>
+  <form id="signupForm">
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <input type="text" id="username" placeholder="Username">
+    <input type="email" id="email" placeholder="Email">
+    <input type="date" id="dob">
+    <input type="password" id="password" placeholder="Password">
+    <div id="strengthMessage" class="strength"></div>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <div id="errorMessage" class="error"></div>
+    <button type="submit">Sign Up</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('signupForm');
+    const password = document.getElementById('password');
+    const strengthMessage = document.getElementById('strengthMessage');
+    const errorMessage = document.getElementById('errorMessage');
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+
+    // Validate First Name and Last Name
+    function validateNameInput(event) {
+      const value = event.target.value;
+      const nameError = document.createElement('div');
+      nameError.className = 'error';
+      nameError.id = `${event.target.id}Error`;
+
+      // Remove existing error message
+      const existingError = document.getElementById(`${event.target.id}Error`);
+      if (existingError) {
+        existingError.remove();
+      }
+
+      if (/\d/.test(value)) {
+        nameError.textContent = 'Numbers are not allowed in this field.';
+        event.target.insertAdjacentElement('afterend', nameError);
+      }
+    }
+
+    firstName.addEventListener('input', validateNameInput);
+    lastName.addEventListener('input', validateNameInput);
+
+    password.addEventListener('input', () => {
+      const value = password.value;
+      let strength = '';
+      let className = '';
+
+      if (value.length < 6) {
+        strength = 'Weak';
+        className = 'weak';
+      } else if (value.match(/[A-Za-z]/) && value.match(/[0-9]/)) {
+        strength = 'Medium';
+        className = 'medium';
+      }
+      if (value.length >= 8 && value.match(/[!@#$%^&*(),.?":{}|<>]/)) {
+        strength = 'Strong';
+        className = 'strong';
+      }
+
+      strengthMessage.textContent = `Password Strength: ${strength}`;
+      strengthMessage.className = `strength ${className}`;
+    });
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent form from submitting
+
+      // Get values
+      const firstNameValue = firstName.value.trim();
+      const lastNameValue = lastName.value.trim();
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const dob = document.getElementById('dob').value;
+      const pass = document.getElementById('password').value;
+      const confirmPass = document.getElementById('confirmPassword').value;
+
+      // Validate fields
+      if (!firstNameValue || !lastNameValue || !username || !email || !dob || !pass || !confirmPass) {
+        errorMessage.textContent = 'Please fill in all fields.';
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        errorMessage.textContent = 'Please enter a valid email address.';
+        return;
+      }
+
+      // Password match
+      if (pass !== confirmPass) {
+        errorMessage.textContent = 'Passwords do not match.';
+        return;
+      }
+
+      // All good
+      errorMessage.textContent = '';
+      alert('Signup successful!');
+    });
+  </script>
+
+</body>
+</html>
