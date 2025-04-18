@@ -12,4 +12,4 @@ This project is built as a learning and portfolio piece, showcasing skills in fu
 
 
 
-it's your boy choota bheen 69
+Adjusted the styling + added the products + Sign up form attached as Ma'am requirements for the assignment 
