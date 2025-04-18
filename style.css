@@ -199,7 +199,7 @@ nav ul li a.active {
 }
 
 .product-container h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #003703;
   text-align: left;
@@ -210,7 +210,7 @@ nav ul li a.active {
 .product-container p {
   color: #003703;
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0;
   padding: 0 20px;
 }
