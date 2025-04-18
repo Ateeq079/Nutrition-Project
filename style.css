@@ -59,6 +59,14 @@ nav ul li a.active {
   border-bottom: 2px solid rgb(0, 0, 0);
 }
 
+#loggo
+{
+  all: unset;
+}
+#loggo:hover
+{
+  cursor: pointer;
+}
 .btn {
   background-color: transparent;
   color: #111111;
