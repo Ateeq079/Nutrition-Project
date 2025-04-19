@@ -11,7 +11,7 @@ Features
 This project is built as a learning and portfolio piece, showcasing skills in full-stack web development, backend integration, and database management. 🚀
 
 
-
+--Shahid Yasin--
 Adjusted the styling + added the products + Sign up form attached as Ma'am requirements for the assignment 
 
 
