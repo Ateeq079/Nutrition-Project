@@ -1,4 +1,3 @@
-/* Importing Google Font */
 /* body {
   background-image: url('assests/mainbg.png');
   background-size: contain;
@@ -8,8 +7,8 @@
 
 /* Hero Section with Background Image */
 .hero {
-  position: relative;
-  height: 62vh;
+  /* position: relative; */
+  height: 90vh;
   display: flex;
   flex-direction: row;
   align-items: top;
@@ -18,8 +17,8 @@
   color: #003703;
   padding: 20px 120px;
   background: url("assests/mainbg.png")
-    no-repeat top center/contain;
-  z-index: 1; /* Keeps hero section below nav */
+    no-repeat top center/cover;
+  /* z-index: 1; Keeps hero section below nav */
   /* border: 1px solid red; */
 }
 
