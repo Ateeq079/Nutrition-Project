@@ -8,6 +8,19 @@ fetch('nav.html')
         const menuToggle = document.querySelector(".menu-toggle");
         const navList = document.querySelector("nav ul");
 
+        // Add active page highlighting
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('nav ul li a');
+        
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (currentPage === href || 
+                (currentPage === '' && href === 'index.html') ||
+                (currentPage === 'Index.html' && href === 'index.html')) {
+                link.classList.add('active');
+            }
+        });
+
         if (menuToggle && navList) {
             menuToggle.addEventListener("click", () => {
                 navList.classList.toggle("active");
