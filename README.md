@@ -17,5 +17,6 @@ Adjusted the styling + added the products + Sign up form attached as Ma'am requi
 --Ahmed:
     -what can i do?
   --did:
-    -created nav_bar applying system. you just need to include style.css file before any css file, then
+    -created nav_bar applying system. you just need to include style.css+nav.css file before any css file, then
      nav_applier.js at bottom and add a div with id nav-placeholder in the top of the body tag
+    -created: style.css file for style that are common in every page, 
