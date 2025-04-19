@@ -13,3 +13,6 @@ This project is built as a learning and portfolio piece, showcasing skills in fu
 
 
 Adjusted the styling + added the products + Sign up form attached as Ma'am requirements for the assignment 
+
+--Ahmed:
+    what can i do?
