@@ -40,7 +40,7 @@
 }
 
 .hero h1 {
-  font-size: 5.6rem;
+  font-size: 90px;
   font-weight: bold;
   margin-bottom: 32px;
 }
@@ -56,7 +56,7 @@
 #hero-content {
   margin-top: 20px;
   /* margin-left: 140px; */
-  width: 50%;
+  width: 70%;
   height: 60vh;
 }
 
@@ -83,19 +83,20 @@
   align-items: center;
 }
 
+.product h1 {
+  font-size: 32px;
+  color: #003703; 
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
 .product p {
-  font-size: 1.4rem;
+  font-size: 22px;
   color: #003703;
   font-weight: 400;
   margin: 0;
 }
 
-.product h1 {
-  font-size: 1.6rem;
-  color: #003703; 
-  margin-top: 30px;
-  margin-bottom: 24px;
-}
 
 .product-container {
   display: flex;
@@ -107,7 +108,7 @@
 
 .product-card {
   width: 30%;
-  height: 60vh;
+  height: 64vh;
   background-color: #ffffff;
   border-radius: 10px;
   padding-bottom: 20px;
@@ -119,7 +120,7 @@
 }
 
 .product-container h2 {
-  font-size: 1.4rem;
+  font-size: 20px;
   font-weight: bold;
   color: #003703;
   text-align: left;
@@ -130,7 +131,7 @@
 .product-container p {
   color: #003703;
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 18px;
   margin: 0;
   padding: 0 20px;
 }
@@ -247,5 +248,80 @@
   .hero button {
     font-size: 14px;
     padding: 10px 15px;
+  }
+}
+
+
+/* Footer Section */
+.footer {
+  width: 100%;
+  background-color: #003703;
+  color: white;
+  padding: 40px 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer-left,
+.footer .footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-left h3,
+.footer .footer-right h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.footer .footer-left p,
+.footer .footer-right p {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.footer .footer-right a {
+  color: white;
+  text-decoration: none;
+  margin: 4px 0;
+}
+
+.footer .footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.footer .social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+  color: #ECFFED;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer .footer-left,
+  .footer .footer-right {
+    align-items: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
   }
 }
