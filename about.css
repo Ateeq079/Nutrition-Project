@@ -1,3 +1,18 @@
+.footer
+{
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-height: 200px;
+  padding: 30px;
+}
+.footer > div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
 .hero {
   margin: 50px px 50px 0px;
   width: 100%;
