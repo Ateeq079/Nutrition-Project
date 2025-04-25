@@ -34,13 +34,21 @@
 .hero > p {
   width: 500px;
 }
+.icons-container
+{
+
+}
 .icons
 {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+}
+.icons > img
+{
+  width: 24px;
+  height: 24px;
 }
 .middle {
     gap: 10px;
