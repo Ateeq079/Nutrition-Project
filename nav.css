@@ -1,162 +1,85 @@
 nav {
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #5BFF64;
-    padding: 3px 50px;
-   
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  /* Hamburger Menu */
-  .menu-toggle {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  /* Navigation List */
-  nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    padding: 10px 15px;
-  }
-  
-  nav ul li a.active {
-    border-bottom: 2px solid rgb(0, 0, 0);
-  }
-  
-  #loggo
-  {
-    all: unset;
-  }
-  #loggo:hover
-  {
-    cursor: pointer;
-  }
-  .btn {
-    background-color: transparent;
-    color: #111111;
-    border: none;
-    padding: 10px 26px;
-    border: 1.4px solid #000000;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .btn:hover {
-    background-color: #0f0f0f;
-    color: white;
-  }
-  
-  #signUpBtn {
-    background-color: black;
-    color: #ffffff;
-    font-weight: 400;
-  }
-  
-  #signUpBtn:hover {
-    background-color: rgb(41, 41, 41);
-  }
-nav {
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    background: #5BFF64;
-    padding: 12px 50px;
-    position: relative;
-   
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  /* Hamburger Menu */
-  .menu-toggle {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  /* Navigation List */
-  nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    padding: 10px 15px;
-  }
-  
-  nav ul li a.active {
-    border-bottom: 2px solid rgb(0, 0, 0);
-  }
-  
-  #loggo
-  {
-    all: unset;
-  }
-  #loggo:hover
-  {
-    cursor: pointer;
-  }
-  .btn {
-    background-color: transparent;
-    color: #111111;
-    border: none;
-    padding: 10px 26px;
-    border: 1.4px solid #000000;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .btn:hover {
-    background-color: #0f0f0f;
-    color: white;
-  }
-  
-  #signUpBtn {
-    background-color: black;
-    color: #ffffff;
-    font-weight: 400;
-  }
-  
-  #signUpBtn:hover {
-    background-color: rgb(41, 41, 41);
-  }
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: #5BFF64;
+  padding: 12px 50px;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation List */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/* Logo Button Reset */
+#loggo {
+  all: unset;
+}
+
+#loggo:hover {
+  cursor: pointer;
+}
+
+/* General Button */
+.btn {
+  background-color: transparent;
+  color: #111111;
+  border: 1.4px solid #000000;
+  padding: 10px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Button Hover */
+.btn:hover {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+/* Sign Up Button */
+#signUpBtn {
+  background-color: black;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#signUpBtn:hover {
+  background-color: rgb(41, 41, 41);
+}

@@ -1,19 +1,149 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Hero Section */
 .hero {
-    margin: 50px px 50px 0px;
-    width: 100%;
-    height: 400px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(234, 14, 14);
+  width: 100%;
+  height: 400px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #003703;
 }
 
-.hero>p{
-    width:500px;
+.hero > p {
+  width: 500px;
+}
+
+/* Middle Section */
+.middle {
+  gap: 10px;
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Profile Cards */
+.profile {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  font-size: 18px;
+  align-items: center;
+}
+.profile:hover
+{
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.profile > img {
+  width: 120px;
+  height: 120px;
+  margin: 12px;
+}
+
+.profile > p {
+  color: #949494;
+  font-size: medium;
+}
+
+/* Text inside Profile */
+.txt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Heading Styles */
+h2 {
+  color: green;
 }
 
 
+/* Footer Section */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem 4rem 2rem 4rem;
+  align-items: start;
+}
+.footer h1{
+  color: black;
+  font: 1.5rem;
+}
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: self-start;
+}
+.footer .socials
+{
+  flex-direction: row;
+}
+.footer img{
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s;
+}
+.footer img:hover
+{
+  transform: scale(1.1);
+}
+
+
+/* Icon Section */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.icons {
+  display: flex;
+  align-items:center;
+  gap: 8px;
+  cursor: pointer;
+  pad: 0.5rem;
+  border-radius: 1px;
+}
+
+.icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.icons p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
