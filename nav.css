@@ -4,6 +4,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  font-family: 'Poppins' ,sans-serif;
+  font-weight: 600;
   background: #5BFF64;
   padding: 12px 50px;
   position: relative;
