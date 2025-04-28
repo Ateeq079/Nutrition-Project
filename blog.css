@@ -1,0 +1,18 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec1 {
+    width: 98vw;
+    height: 88vh;
+    margin-top: 2vh;
+    background: url(blog_assests/freepik__35mm-film-photography-a-vibrant-and-visually-appea__81486\ 1.png) no-repeat center center/cover;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(91, 255, 100, 1) 0%, rgba(87, 199, 133, 0) 65%);
+}
