@@ -30,4 +30,5 @@ Did the new footer code and added better cards in the about us page
     Vibe coded footer does not look good + adjusted the homepage hero section font size ✌Peace out✌
 
     --Shahid Yasin--
-    👤 blog cards added in home page, the images are needed to be updated as well as the blog text, also some CSS in pending that I'll update in my next session ✌Peace out✌
+    👤 blog cards added in home page, the images are needed to be updated as well as the blog text, also some CSS in pending that I'll update in my next session ✌Peace out✌ 
+    I'll use images and blog text from figma
