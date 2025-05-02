@@ -17,7 +17,7 @@ main {
 .gradient {
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(91, 255, 100, 1) 0%, rgba(87, 199, 133, 0) 65%);
+    background: linear-gradient(0deg, rgb(0, 106, 5) 0%, rgba(87, 199, 133, 0) 65%);
 }
 .sec1>.text-content {
     position: absolute;

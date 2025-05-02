@@ -1,36 +1,33 @@
-
 /* Reset */
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-body
-{
-  font-family: Arial, Helvetica, sans-serif;
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
-h1
-{
+h1 {
   font-size: 48px;
   font-weight: 700;
-  font-family: 'Poppins' , sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
-h3
-{
+h3 {
+  margin: 0;
   font-weight: 600;
   font-size: 28px;
-  font-family: 'Poppins' , sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-p
-{
+p {
   font-weight: 400;
-  font-family: 'Open Sans' ,sans-serif ;
+  font-family: "Open Sans", sans-serif;
 }
-button
-{
-  font-family: 'Poppins';
+button {
+  font-family: "Poppins";
   font-weight: 700;
 }
-
 
 /* Hero Section */
 .hero {
@@ -59,67 +56,35 @@ button
   flex-direction: column;
   width: 100%;
 }
-.goal-container
-{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-}
-.goal-cards
-{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 16px;
-  width: 300px;
-  height:200px;
-  align-items: center;
-  justify-content: center;
-
-}
-.goal-txt
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.goal-cards >i
-{
-  color: #00a308;
-  font-size: 36px;
-}
-.goal-txt > p
-{
-  align-self: center;
-}
 
 .container {
-  width: 50%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  padding: 10px;
+  flex-direction: row;
+  padding: 32px;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  justify-content: space-around;
 }
 
 /* Profile Cards */
 .profile {
-  width: 100%;
+  width: 300px;
+  height: 300px;
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
+  padding: 16px;
   background-color: white;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   font-size: 18px;
   align-items: center;
+  justify-content: center;
 }
-.profile:hover
-{
+.profile:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .profile > img {
@@ -128,19 +93,61 @@ button
   margin: 12px;
 }
 
-.profile > p {
+.profile > .txt > p {
   color: #949494;
   font-size: medium;
+  height: 50px;
+  overflow: hidden;
 }
 
 /* Text inside Profile */
 .txt {
   display: flex;
+  gap: 12px;
   flex-direction: column;
   width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Heading Styles */
 h2 {
   color: green;
+}
+.goal-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 40px;
+  height: auto;
+
+}
+.goal-cards {
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+}
+.goal-cards:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.goal-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.goal-cards > i {
+  color: #00a308;
+  font-size: 36px;
 }
