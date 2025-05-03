@@ -1,9 +1,8 @@
-/* Reset */
-
 /* Import fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@400;700&display=swap");
 :root {
-  /* ----Root Color Styling---- */
+
+    /* ----Root Color Styling---- */
   --color-primary: #4caf50;
   --color-accent: #a8e6cf;
   --color-bg: #fafaf0;
@@ -43,8 +42,8 @@ body {
   font-size: var(--font-size-body);
   line-height: var(--line-height-normal);
   font-weight: var(--font-weight-regular);
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: #333;
+  background-color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -59,7 +58,7 @@ h6 {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-bold);
   margin-top: 0;
-  color: var(--color-text);
+  color: #111;
 }
 
 h1 {
@@ -70,7 +69,6 @@ h1 {
 h2 {
   font-size: var(--font-size-h2);
   line-height: var(--line-height-tight);
-  color: var(--color-primary);
 }
 
 h3 {
@@ -96,7 +94,6 @@ h6 {
 /* Paragraphs and text */
 p {
   margin-bottom: 1rem;
-  color: var(--color-text);
 }
 
 /* Small text */
@@ -104,124 +101,12 @@ small,
 .small {
   font-size: var(--font-size-small);
   line-height: var(--line-height-normal);
-  color: var(--color-muted);
+  color: #666;
 }
 
 /* Footer notes */
 .footer-note {
   font-size: var(--font-size-footer);
   line-height: var(--line-height-normal);
-  color: var(--color-muted);
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* Middle Section */
-.middle {
-  gap: 10px;
-  margin-top: 30px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.container {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  padding: 32px;
-  align-items: center;
-  gap: 20px;
-  justify-content: space-around;
-}
-
-/* Profile Cards */
-.profile {
-  width: 300px;
-  height: 300px;
-  box-sizing: border-box;
-  border: 1px solid var(--color-muted);
-  border-radius: 8px;
-  padding: 16px;
-  background-color: var(--color-bg);
-  display: flex;
-  flex-flow: column;
-  font-size: var(--font-size-body);
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text);
-}
-.profile:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.profile > img {
-  width: 120px;
-  height: 120px;
-  margin: 12px;
-}
-
-.profile > .txt > p {
-  color: var(--color-muted);
-  font-size: var(--font-size-small);
-  height: 50px;
-  overflow: hidden;
-}
-
-/* Text inside Profile */
-.txt {
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Heading Styles */
-h2 {
-  color: var(--color-primary);
-}
-.goal-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  gap: 40px;
-  height: auto;
-}
-.goal-cards {
-  width: 300px;
-  height: 300px;
-  box-sizing: border-box;
-  border: 1px solid var(--color-muted);
-  border-radius: 8px;
-  padding: 16px;
-  background-color: var(--color-bg);
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-  justify-content: center;
-  color: var(--color-text);
-}
-.goal-cards:hover {
-  cursor: pointer;
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.goal-txt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.goal-cards > i {
-  color: var(--color-primary);
-  font-size: 36px;
+  color: #999;
 }
