@@ -32,3 +32,7 @@ Did the new footer code and added better cards in the about us page
     --Shahid Yasin--
     👤 blog cards added in home page, the images are needed to be updated as well as the blog text, also some CSS in pending that I'll update in my next session ✌Peace out✌ 
     I'll use images and blog text from figma
+
+    --Shahid Yasin--
+    🐱‍👤 updated the style for the blog cards and the added buy now button to the product cards
+    ✌Peace out✌
