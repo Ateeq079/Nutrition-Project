@@ -1,29 +1,45 @@
-/* Reset */
-
-/* Import fonts from Google Fonts */
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@400;700&display=swap");
-:root {
-  /* ----Root Color Styling---- */
-  --color-primary: #4caf50;
-  --color-accent: #a8e6cf;
-  --color-bg: #fafaf0;
-  --color-text: #333333;
-  --color-muted: #888888;
-  --color-hover: #388e3c;
 
-  /* -====================================-
-    ---Root Variables for Font Setting ----
-    --------------------------------------- */
+:root {
+  /* Brand */
+  --color-primary: #4caf50;
+  --color-primary-dark: #388e3c;
+  --color-primary-light: #c8e6c9;
+
+  /* Neutrals */
+  --white: #ffffff;
+  --gray-50: #fafaf0;
+  --gray-100: #f5f5f5;
+  --gray-200: #eeeeee;
+  --gray-400: #bdbdbd;
+  --gray-600: #757575;
+  --gray-900: #212121;
+
+  /* Semantic */
+  --success: #43a047;
+  --warning: #ffa000;
+  --error: #e53935;
+  --info: #039be5;
+
+  /* Card backgrounds */
+  --card-bg-default: #ffffff;
+  --card-bg-muted: #fafaf0;
+  --card-bg-green: #f1f8e9;
+  --card-bg-accent: #e0f2f1;
+
+  /* Typography */
   --font-heading: "Playfair Display", serif;
   --font-body: "Lato", sans-serif;
 
-  --font-size-h1: 3rem; /* 48px */
-  --font-size-h2: 2.25rem; /* 36px */
+  /* Font sizes */
+  --font-size-h1: 3rem;     /* 48px */
+  --font-size-h2: 2.25rem;  /* 36px */
   --font-size-h3: 1.875rem; /* 30px */
-  --font-size-h4: 1.5rem; /* 24px */
-  --font-size-h5: 1.25rem; /* 20px */
-  --font-size-h6: 1rem; /* 16px */
-  --font-size-body: 1rem; /* 16px */
+  --font-size-h4: 1.5rem;   /* 24px */
+  --font-size-h5: 1.25rem;  /* 20px */
+  --font-size-h6: 1rem;     /* 16px */
+  --font-size-body: 1rem;   /* 16px */
   --font-size-small: 0.875rem; /* 14px */
   --font-size-footer: 0.75rem; /* 12px */
 
@@ -34,32 +50,30 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-
-  /* -============================- */
 }
+
 /* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--font-body);
   font-size: var(--font-size-body);
   line-height: var(--line-height-normal);
   font-weight: var(--font-weight-regular);
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  margin: 0;
-  padding: 0;
+  color: var(--gray-900);
+  background-color: var(--color-primary-light);
 }
 
 /* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-bold);
   margin-top: 0;
-  color: var(--color-text);
+  color: var(--gray-900);
 }
 
 h1 {
@@ -68,8 +82,11 @@ h1 {
 }
 
 h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-h2);
   line-height: var(--line-height-tight);
+  margin-top: 0;
   color: var(--color-primary);
 }
 
@@ -93,135 +110,117 @@ h6 {
   line-height: var(--line-height-normal);
 }
 
-/* Paragraphs and text */
+/* Text */
 p {
   margin-bottom: 1rem;
-  color: var(--color-text);
+  color: var(--gray-900);
 }
 
-/* Small text */
-small,
-.small {
+small, .small {
   font-size: var(--font-size-small);
   line-height: var(--line-height-normal);
-  color: var(--color-muted);
+  color: var(--gray-600);
 }
 
-/* Footer notes */
 .footer-note {
   font-size: var(--font-size-footer);
   line-height: var(--line-height-normal);
-  color: var(--color-muted);
+  color: var(--gray-600);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* Middle Section */
+/* Layout wrappers */
 .middle {
-  gap: 10px;
-  margin-top: 30px;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
   width: 100%;
 }
 
 .container {
-  width: 80%;
   display: flex;
   flex-direction: row;
-  padding: 32px;
-  align-items: center;
-  gap: 20px;
   justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  padding: 32px;
+  gap: 20px;
 }
 
 /* Profile Cards */
 .profile {
-  width: 300px;
-  height: 300px;
-  box-sizing: border-box;
-  border: 1px solid var(--color-muted);
+  width: 350px;
+  height: 400px;
+  border: 1px solid var(--gray-200);
   border-radius: 8px;
   padding: 16px;
-  background-color: var(--color-bg);
+  background-color: var(--card-bg-green);
   display: flex;
-  flex-flow: column;
-  font-size: var(--font-size-body);
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--color-text);
+  text-align: center;
+  gap: 16px;
+  color: var(--gray-900);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .profile:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .profile > img {
   width: 120px;
   height: 120px;
-  margin: 12px;
+  margin: 12px 0;
 }
-
-.profile > .txt > p {
-  color: var(--color-muted);
+.profile .txt
+{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profile .txt p {
+  color: var(--gray-600);
   font-size: var(--font-size-small);
   height: 50px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-
-/* Text inside Profile */
-.txt {
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Heading Styles */
-h2 {
+.profile .txt h3
+{
   color: var(--color-primary);
 }
+/* Goal Cards */
 .goal-container {
   display: flex;
-  flex-direction: row;
-  width: 100%;
   justify-content: center;
   gap: 40px;
-  height: auto;
+  width: 100%;
 }
 .goal-cards {
   width: 300px;
   height: 300px;
-  box-sizing: border-box;
-  border: 1px solid var(--color-muted);
+  border: 1px solid var(--gray-200);
   border-radius: 8px;
   padding: 16px;
-  background-color: var(--color-bg);
+  background-color:var(--card-bg-green);
   display: flex;
-  flex-flow: column;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  color: var(--color-text);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.goal-txt h3
+{
+  color: var(--color-primary);
 }
 .goal-cards:hover {
   cursor: pointer;
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.goal-txt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.goal-cards > i {
-  color: var(--color-primary);
+.goal-cards i {
   font-size: 36px;
+  color: var(--color-primary);
 }
