@@ -115,8 +115,20 @@
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-card .product-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+  width: 100%;
+}
+.product-info div {
+  margin: 0 10px;
+  border: 1px solid pink;
 }
 
 .product-container h2 {
@@ -125,7 +137,6 @@
   color: #003703;
   text-align: left;
   margin: 0;
-  padding: 10px 20px;
 }
 
 .product-container p {
@@ -133,7 +144,6 @@
   text-align: left;
   font-size: 18px;
   margin: 0;
-  padding: 0 20px;
 }
 
 .product-container img {
@@ -284,10 +294,9 @@
 }
 
 .blog-page-intro h1 {
-  font-size: 32px;
+  font-size: 36px;
   color: #003703; 
   margin-top: 30px;
-  margin-bottom: 24px;
 }
 
 
