@@ -1,9 +1,4 @@
-/* body {
-  background-image: url('assests/mainbg.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
+
 
 /* Hero Section with Background Image */
 .hero {
@@ -16,7 +11,7 @@
   text-align: left;
   color: #003703;
   padding: 20px 120px;
-  background: url("assests/mainbg.png")
+  background: url("../assests/mainbg.png")
     no-repeat top center/cover;
   /* z-index: 1; Keeps hero section below nav */
   /* border: 1px solid red; */

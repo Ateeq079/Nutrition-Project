@@ -18,6 +18,7 @@ Adjusted the styling + added the products + Sign up form attached as Ma'am requi
 --Ateeq Ur Rehman--
 Added aboutus and add some elements and also did some minor changes to the code
 Did the new footer code and added better cards in the about us page 
+Completed the About Us Page with responsive desing.
 --Ahmed:
     -what can i do?
   --did:

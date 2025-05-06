@@ -131,33 +131,26 @@ small,
   line-height: var(--line-height-normal);
   color: var(--gray-600);
 }
-
-/* Footer Section */
+/*This starts the footer*/
+/*----------------------*/
 .footer {
-  background-color: var(--white); /* was #ffffff */
-  border-top: 1px solid var(--gray-200); /* was #e0e0e0 */
-  font-family: var(--font-body); /* using Lato per root */
-  font-weight: var(--font-weight-regular); /* was 400 */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  background-color: var(--white);
+  border-top: 1px solid var(--gray-200);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 2rem 4rem;
-  align-items: start;
+  gap: 2rem;
   margin-top: 70px;
 }
 
-.footer h1 {
-  font-family: var(--font-heading); /* Playfair Display */
-  font-weight: var(--font-weight-bold); /* bold headings */
-  font-size: var(--font-size-h1); 
-  color: var(--color-primary); 
-  margin: 0;
-}
-
 .footer > div {
+  flex: 1 1 200px; /* Grow/Shrink with min width */
   display: flex;
   flex-direction: column;
-  gap: 0.625rem; /* 10px */
+  gap: 0.625rem;
   align-items: flex-start;
 }
 
@@ -165,21 +158,36 @@ small,
 .footer .socials {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem; /* optional spacing */
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
-
-.footer img {
-  width: 2rem; /* 32px */
-  height: 2rem;
-  transition: transform 0.2s ease;
+.news-letter input
+{
+  height: 42px;
+  width: 200px;
+  border-radius:4px ;
+  margin-bottom: 18px;
 }
-
-.footer img:hover {
-  transform: scale(1.1);
+.news-letter button
+{
+  height: 42px;
+  width: 90px;
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--white);
+  border-radius: 4px;
 }
-
-/* Icon Section */
+.news-letter button:hover
+{
+  background-color: var(--color-primary-dark);
+}
+/* Icon section */
 .icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.foot-container {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -188,22 +196,105 @@ small,
 .icons {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* 8px */
+  gap: 0.5rem;
   cursor: pointer;
   padding: 0.5rem;
-  border-radius: 0.125rem; /* 2px */
+  border-radius: 0.125rem;
 }
 
 .icons img {
-  width: 1.5rem; /* 24px */
+  width: 1.5rem;
   height: 1.5rem;
 }
 
 .icons p {
   margin: 0;
   font-family: var(--font-body);
-  font-size: var(--font-size-body); /* 1rem (16px) */
-  font-weight: var(--font-weight-medium); /* 500 */
-  line-height: var(--line-height-tight); /* tighter for icons */
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
   color: var(--gray-900);
+}
+.legal-text
+{
+  background-color: var(--white);
+  border-top: 1px solid var(--gray-200);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin-top: 12px;
+}
+.legal-text p{
+  margin-bottom: 0;
+  margin-left: 8px;
+  color: var(--info);
+}
+/* Responsive adjustments */
+
+/* Tablets and below */
+@media (max-width: 992px) {
+  .footer {
+    justify-content: center;
+    padding: 2rem;
+  }
+  .footer > div {
+    flex: 1 1 45%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer > div {
+    align-items: center;
+  }
+  .foot-container
+  {
+    flex-direction: row;
+  }
+  .icon-container
+  {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .socials {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .footer h1 {
+    font-size: var(--font-size-h3);
+  }
+
+  h2 {
+    font-size: var(--font-size-h4);
+  }
+
+  .footer img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .icons img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .icons p {
+    font-size: var(--font-size-small);
+  }
 }
