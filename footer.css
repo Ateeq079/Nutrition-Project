@@ -161,15 +161,13 @@ small,
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-.news-letter input
-{
+.news-letter input {
   height: 42px;
   width: 200px;
-  border-radius:4px ;
+  border-radius: 4px;
   margin-bottom: 18px;
 }
-.news-letter button
-{
+.news-letter button {
   height: 42px;
   width: 90px;
   background-color: var(--color-primary);
@@ -177,8 +175,7 @@ small,
   color: var(--white);
   border-radius: 4px;
 }
-.news-letter button:hover
-{
+.news-letter button:hover {
   background-color: var(--color-primary-dark);
 }
 /* Icon section */
@@ -215,8 +212,7 @@ small,
   line-height: var(--line-height-tight);
   color: var(--gray-900);
 }
-.legal-text
-{
+.legal-text {
   background-color: var(--white);
   border-top: 1px solid var(--gray-200);
   font-family: var(--font-body);
@@ -228,7 +224,7 @@ small,
   padding: 1rem 2rem;
   margin-top: 12px;
 }
-.legal-text p{
+.legal-text p {
   margin-bottom: 0;
   margin-left: 8px;
   color: var(--info);
@@ -258,15 +254,17 @@ small,
   .footer > div {
     align-items: center;
   }
-  .foot-container
-  {
+  .foot-container {
     flex-direction: row;
   }
-  .icon-container
-  {
-    flex-direction: row;
+  .footer .foot-container {
+    flex-direction: row !important;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
+
   .socials {
     justify-content: center;
     flex-wrap: wrap;
