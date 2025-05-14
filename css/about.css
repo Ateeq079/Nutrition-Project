@@ -1,5 +1,4 @@
-/* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@400;700&display=swap");
+
 
 :root {
   /* Brand */
@@ -29,8 +28,8 @@
   --card-bg-accent: #e0f2f1;
 
   /* Typography */
-  --font-heading: "Playfair Display", serif;
-  --font-body: "Lato", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 
   /* Font sizes */
   --font-size-h1: 3rem; /* 48px */
@@ -49,7 +48,7 @@
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700;
+  --font-weight-bold:700;
 }
 
 /* Global styles */
@@ -299,5 +298,13 @@ small,
     text-align: center;
     color: var(--gray-900);
     transition: transform 0.2s, box-shadow 0.2s;
+  }
+  h1
+  {
+    font-size: var(--font-size-h2);
+  }
+  h3
+  {
+    font-size: var(--font-size-h4);
   }
 }
